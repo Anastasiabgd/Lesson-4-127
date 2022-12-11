@@ -80,21 +80,22 @@
 
 // HW 6
 
-// let item = [12, 'google', 32, null, 'yahoo', 25];
+let item = [12, 'google', 32, null, 'yahoo', 25];
 
-// for(let element of item){
-//     // console.log(element);
+let array = item.map(item =>{
+    if(typeof item == 'number'){
+        return item * item
+    }else if(typeof item == 'string'){
+        return item.toUpperCase();
+    }
+    return item
+})
 
-//     if(element >=0){
+console.log(array);
 
-//     let newelement = item.map(function (num) {
-//         return Math.pow(num, 2);
-        
-//     })
-//     console.log(newelement);
-            
-//     } 
-// }
+
+
+
 
 
 // HW 7
@@ -121,11 +122,13 @@
 
 // let numbers = [-2, 5, 10, -5, -1, 1, 3, 4, -15];
 
-
+// let possitive = numbers.filter(d => d > 0);
+// console.log(possitive);
 
 
 
 // HW 10
+
 
 // let array =[1, 2, 3, 4, 5];
 
